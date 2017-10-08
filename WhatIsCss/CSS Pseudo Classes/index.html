@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Pseudo Classes</title>
+        <style>
+
+        .dpc a{
+          display: none;
+        }
+
+        .dropdown:hover .dpc a {
+          display: block;
+        }
+
+        </style>
+    </head>
+    <body>
+       <div class="dropdown">
+         <a href="">Link</a>
+         <div class="dpc">
+           <a href="">Link</a>
+           <a href="">Link</a>
+           <a href="">Link</a>
+         </div>
+       </div>
+    </body>
+</html>

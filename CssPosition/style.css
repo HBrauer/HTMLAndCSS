@@ -1,0 +1,35 @@
+.header{
+  width: 100%;
+  height: 40px;
+  background-color: rgb(182, 48, 5);
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 10;
+}
+
+.side{
+  position: fixed;
+  right:0%;
+  top: 40%;
+  width: 10%;
+  height: 5%;
+  background-color: rgb(215, 23, 179);
+}
+
+p{
+  font-size: 2em;
+  width: 83.3333%;
+  margin: 2%;
+  text-align: justify;
+  float: left;
+  border: 2px solid blue;
+}
+
+.container{
+  width: 80%;
+  position: relative;
+  left: 10%;
+  display: flex;
+  border: 2px solid red;
+}

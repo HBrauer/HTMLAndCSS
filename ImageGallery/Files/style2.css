@@ -1,0 +1,115 @@
+body{
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+
+header{
+  overflow: hidden;
+}
+
+nav{
+  float: right;
+}
+
+header nav ul li{
+  list-style: none;
+  float: right;
+  margin-left: 20px;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  font-size: 130%;
+  color: #555;
+  font-weight: 600;
+}
+
+header nav ul li a:hover{
+  color: #aaa;
+}
+
+header h1{
+  float: left;
+  color: #555;
+  font-size: 1.6em;
+}
+
+.wrapper{
+  width: 80%;
+  margin: auto;
+  max-width: 1280px;
+
+}
+
+.container{
+  width: 100%;
+}
+
+div.container img{
+  float: left;
+  width: 33.3333%;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  transition: opacity .5s;
+}
+
+div.container img:hover{
+  opacity: .7;
+}
+
+section h2{
+  text-align: center;
+}
+
+section {
+  margin-bottom: 3%;
+}
+
+section:after{
+  clear: both;
+  content: " ";
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  #menu-icon{
+    background: url(images/menu.png) no-repeat center;
+    width: 30px;
+    height: 26px;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    z-index: 100;
+  }
+
+  .wrapper{
+    width: 100%;
+  }
+
+  li {
+    width: 100%;
+    text-align: left;
+  }
+
+  ul {
+    display: none;
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    background-color: #fff;
+    width: 150px;
+    margin: 0px;
+  }
+
+  nav:hover ul{
+    display: block;
+  }
+
+  div.container img{
+    width: 100%;
+
+  }
+}

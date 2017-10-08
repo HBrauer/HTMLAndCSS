@@ -1,0 +1,96 @@
+$font-stack:    Helvetica, sans-serif
+$primary-color: #333
+
+body
+  font: 100% $font-stack
+  color: $primary-color
+  max-width: 1024
+
+.logo
+  float: left
+  h1
+    margin: 0
+
+
+header
+  background-color: #fff
+  overflow: auto
+  padding: 10px
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3)
+  position: fixed
+  width: 100%
+  box-sizing: border-box
+  left: 0%
+  top: 0
+  nav
+    float: right
+    ul
+      li
+        list-style: none
+        float: right
+        margin-right: 20px
+
+
+.slider
+  width: 100%
+  margin: auto
+  position: relative
+  top: 60px
+  overflow: hidden
+  border-radius: 20px
+  z-index: -1
+  box-sizing: border-box
+  section
+    position: relative
+    left: 0
+    width: 500%
+    margin: 0
+    animation: 30s slideshow infinite
+    div
+      width: 20%
+      float: left
+      img
+        width: 100%
+  :after
+    clear: both
+
+
+
+@keyframes slideshow
+  0% {left: 0%;}
+  10% {left: 0%;}
+  12% {left: -100%;}
+  22% {left: -100%;}
+  24% {left: -200%;}
+  34% {left: -200%;}
+  36% {left: -300%;}
+  46% {left: -300%;}
+  48% {left: -400%;}
+  58% {left: -400%;}
+  60% {left: -300%;}
+  70% {left: -300%;}
+  72% {left: -200%;}
+  82% {left: -200%;}
+  84% {left: -100%;}
+  94% {left: -100%;}
+  96% {left: 0%;}
+
+
+.cards
+  position: relative
+  top: 60px
+  z-index: -5
+  .row
+    clear: both
+
+.card
+  float: left
+  width: 30.333%
+  padding: 1.5%
+  h3
+    text-align: center
+  p
+    margin: auto
+    text-align: justify
+  a
+    display: block

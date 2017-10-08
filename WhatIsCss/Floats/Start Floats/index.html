@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Floats</title>
+        <style>
+            #parent {
+                background: grey;
+                border-top: 10px solid blue;
+                border-bottom: 10px solid purple;
+               overflow: auto;
+                width: 600px;
+            }
+            .left {
+                background: red;
+                width: 100px;
+                height: 100px;
+                float: left;
+            }
+            .right1 {
+                background: green;
+                width: 100px;
+                height: 100px;
+                float: right;
+                clear: left;
+
+            }
+
+            .right2 {
+                background: green;
+                width: 100px;
+                height: 100px;
+                float: right;
+clear: both;
+
+            }
+
+            .right3 {
+                background: green;
+                width: 100px;
+                height: 100px;
+                float: right;
+
+            }
+
+        </style>
+    </head>
+    <body>
+
+      <div id="parent" class="clearfix">
+         <div class="left"></div>
+         <div class="right1">1</div>
+         <div class="right2">2</div>
+         <div class="right3">3</div>
+      </div>
+
+    </body>
+</html>
